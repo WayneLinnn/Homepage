@@ -1,0 +1,131 @@
+% ============================================================
+% Wayne Lin — Professional Resume (Overleaf-ready)
+% Outstanding template following HR best practices:
+%   Clear structure | STAR-style bullets | Quantified results
+%
+% Popular template inspirations (AltaCV, Awesome CV, Modern CV):
+%   One-page fit via tight geometry and reduced vertical spacing;
+%   Contact + Homepage; company names as hyperlinks; aligned dates.
+%
+% HOW TO USE IN OVERLEAF:
+%   1. New Project → Upload Project → upload this .tex file
+%   2. Compiler: pdfLaTeX (Menu → Compiler)
+%   3. Replace all placeholder text with your Word resume content
+%   4. Keep bullet format: Action verb + what you did + result (with % or numbers)
+% ============================================================
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{array}
+\usepackage{fontawesome5}
+
+% ---------- Accent color (popular Overleaf style: Awesome CV red) ----------
+\definecolor{accent}{HTML}{DC3522}
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent, pdfborder=0 0 0}
+
+% ---------- Layout (tight one-page fit) ----------
+\geometry{margin=1.1cm, top=0.6cm, bottom=0.6cm}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% ---------- Section style: bold + red rule (Overleaf-style accent) ----------
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\vspace{-0.35ex}{\color{accent}\rule{\linewidth}{0.5pt}}\vspace{0.35ex}]
+\titlespacing*{\section}{0pt}{1.1ex}{0.5ex}
+
+% ---------- Custom commands ----------
+\newcommand{\name}[1]{\begin{center}\Huge\bfseries\color{accent} #1\end{center}\vspace{-0.15cm}}
+\newcommand{\contactline}[2]{\begin{center}\small #1 \\[0.25em] #2\end{center}\vspace{0.28cm}}
+\newcommand{\itembullet}{\ $\bullet$\ }
+% Right-aligned date + location (fixed 4.5cm width so all dates align vertically)
+\newcommand{\dateright}[2]{\hfill \parbox[t]{4.5cm}{\raggedleft\small #1 \\ \small #2}}
+% Entry: bold title (company as link) | role, then date block; add small gap before bullets
+\newcommand{\entry}[3]{\noindent #1 \dateright{#2}{#3}\vspace{1pt}}
+
+% ============================================================
+\begin{document}
+
+% ---------- Header ----------
+\name{Feng Lin}
+% Homepage on second line; replace URL when your site is ready
+\contactline{
+  \faMapMarker*\ New South Wales, Australia \itembullet Open to Relocation
+  \itembullet \faEnvelope\ \href{mailto:waynelinEU@gmail.com}{waynelinEU@gmail.com}
+  \itembullet \faPhone\ +61 499 168 731
+}{
+  \faGlobe\ \href{https://waynelin.github.io}{Homepage}
+}
+\vspace{-0.12cm}
+
+% ---------- EXPERIENCE & RESEARCH ----------
+\section*{Experience \& Research}
+
+\entry{\textbf{\href{https://www.jtn.com/CN/index.aspx}{Law Firm} \textbar\ AI technique provider}}{Sep 2023 -- Dec 2025}{Jinan, China}
+\begin{itemize}[leftmargin=1.5em, nosep, topsep=1pt]
+  \item Built a law logic solution system with Coze to provide law service, resulting in providing the lawyer case searching and case integration.
+  \item Provided Chinese legal services.
+\end{itemize}
+\vspace{0.12cm}
+
+\entry{\textbf{\href{https://www.wipro.com/en-ANZ}{Wipro} \textbar\ Java Backend Developer}}{Sep 2022 -- June 2023}{Sydney, Australia}
+\begin{itemize}[leftmargin=1.5em, nosep, topsep=1pt]
+  \item Developed and maintained backend services with Maven and Hibernate, ensuring reliable deployment and consistency.
+  \item Delivered e-commerce backend using Spring Boot; implemented API layer and connected front-end systems for production use.
+\end{itemize}
+\vspace{0.12cm}
+
+\entry{\textbf{University of Queensland \textbar\ Weakly Supervised Learning (Medical)}}{Feb 2022 -- June 2022}{Brisbane, Australia}
+\begin{itemize}[leftmargin=1.5em, nosep, topsep=1pt]
+  \item Researched classification performance of several models on large unlabeled, imbalanced datasets; led data cleaning and reprocessing in Python (TensorFlow, PyTorch), resulting in investigating whether medical datasets are appropriate for this method.
+  \item Built various CNN and MLP models to investigate weakly supervised learning, resulting in image and NLP self-supervision methods for cancer diagnosis.
+  \item Publication: \href{https://link.springer.com/article/10.1007/s11633-022-1382-8}{\textit{Pre-training in Medical Data: A Survey}}.
+\end{itemize}
+\vspace{0.12cm}
+
+\entry{\textbf{University of Queensland \textbar\ Cardiovascular Signal Classification \& Display}}{Aug 2021 -- Nov 2021}{Brisbane, Australia}
+\begin{itemize}[leftmargin=1.5em, nosep, topsep=1pt]
+  \item Processed and displayed cardiovascular signal results using GCP, running the full classification process on Google Cloud Platform.
+  \item Built CNN training pipeline using Hadoop, Python (PyTorch, Matplotlib), delivering a practical model for GCP.
+\end{itemize}
+\vspace{0.12cm}
+
+\entry{\textbf{\href{https://www.inspur.com}{Inspur} \textbar\ Frontend Developer Intern}}{Oct 2019 -- Feb 2020}{Jinan, China}
+\begin{itemize}[leftmargin=1.5em, nosep, topsep=1pt]
+  \item Improved provincial government website using Java, HTML, and CSS, delivering the province's government website.
+\end{itemize}
+\vspace{0.1cm}
+
+% ---------- EDUCATION ----------
+\section*{Education}
+
+\entry{\textbf{University of Queensland -- Master of Information Technology}}{July 2020 -- July 2022}{Brisbane, Australia}
+\begin{itemize}[leftmargin=1.5em, nosep, topsep=1pt]
+  \item Thesis: Weakly Supervised Learning for Cyber Attacks from Only Unlabeled Data
+\end{itemize}
+\vspace{0.1cm}
+
+\entry{\textbf{University of Tasmania -- Bachelor of Electrical Power Engineering (Honours)}}{Sep 2014 -- Dec 2018}{Hobart, Australia}
+\begin{itemize}[leftmargin=1.5em, nosep, topsep=1pt]
+  \item Thesis: The Influences of Wind Farm Integration to Power Grid
+\end{itemize}
+\vspace{0.1cm}
+
+% ---------- SKILLS ----------
+\section*{Skills}
+\textbf{Backend:} Node.js, Java, Spring Boot, Maven, Hibernate \itembullet
+\textbf{ML/Data:} Python, PyTorch, TensorFlow, Hadoop, GCP \\
+\textbf{Frontend:} React, HTML, CSS, JavaScript 
+\\
+\textbf{Languages:} English (fluent), Mandarin (native) \itembullet
+\textbf{Licence:} Australia Driver's Licence
+
+% ---------- Optional: Awards / Certifications ----------
+% \section*{Awards \& Certifications}
+% Award name \hfill Year \itembullet Certification name \hfill Year
+
+\end{document}

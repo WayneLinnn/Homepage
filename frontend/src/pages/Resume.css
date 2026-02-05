@@ -1,0 +1,25 @@
+.resume-intro,
+.resume-note {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.resume-intro code,
+.resume-note code {
+  background: var(--bg-light);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.resume .section-heading {
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}

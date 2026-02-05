@@ -1,0 +1,87 @@
+/* Brittany-style palette: dark navy, light text, teal accent */
+:root {
+  --bg: #0a192f;
+  --bg-light: #112240;
+  --surface: #233554;
+  --text: #ccd6f6;
+  --text-muted: #8892b0;
+  --accent: #64ffda;
+  --accent-dark: #4fd1b8;
+  --border: rgba(136, 146, 176, 0.2);
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+section {
+  padding: 4rem 0;
+  scroll-margin-top: 2rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
