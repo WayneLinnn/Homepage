@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import "./Projects.css";
+import { projectBlueprints } from "../data/careerData";
 
-const projects = [
+const shippedProjects = [
   {
     title: "Law Logic Solution with Coze",
     desc: "Built a law logic solution system with Coze to provide law service, resulting in lawyer case searching and case integration. Delivered Chinese legal services.",
@@ -38,8 +40,45 @@ export default function Projects() {
         <h2 className="section-heading">
           <span className="section-num">03.</span> Projects
         </h2>
+        <p className="project-section-copy">
+          I am using this portfolio to show both shipped experience and the two
+          showcase projects I am building to target backend and AI-product roles
+          in Australia.
+        </p>
+        <h3 className="project-subheading">Portfolio Build Projects</h3>
         <div className="project-list">
-          {projects.map((p, i) => (
+          {projectBlueprints.map((project) => (
+            <article
+              key={project.slug}
+              className="project-card project-card-feature"
+            >
+              <div className="project-card-inner">
+                <p className="project-kicker">{project.subtitle}</p>
+                <h3 className="project-title">
+                  <Link
+                    to={`/projects/${project.slug}`}
+                    className="project-title-link"
+                  >
+                    {project.title}
+                    <span className="project-arrow" aria-hidden="true">
+                      →
+                    </span>
+                  </Link>
+                </h3>
+                <p className="project-desc">{project.summary}</p>
+                <p className="project-signal">{project.hiringSignal}</p>
+                <ul className="project-tags">
+                  {project.stack.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          ))}
+        </div>
+        <h3 className="project-subheading">Selected Delivery Evidence</h3>
+        <div className="project-list">
+          {shippedProjects.map((p, i) => (
             <article key={i} className="project-card">
               <div className="project-card-inner">
                 <h3 className="project-title">
@@ -71,7 +110,7 @@ export default function Projects() {
         </div>
         <p className="project-archive">
           <a
-            href="/Resume2026.pdf"
+            href="/full-stack-ai-developer-feng-lin-2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="project-archive-link"

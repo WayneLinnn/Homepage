@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Layout.css";
+import { positionSummary } from "../data/careerData";
 
 const navItems = [
   { hash: "about", label: "About" },
@@ -45,14 +46,10 @@ export default function Layout({ children }) {
       <aside className="sidebar">
         <div className="sidebar-inner">
           <header className="sidebar-header">
-            <p className="sidebar-kicker">Hi, my name is</p>
-            <h1 className="sidebar-name">Wayne Lin.</h1>
-            <p className="sidebar-title">Backend &amp; AI Engineer</p>
-            <p className="sidebar-tagline">
-              I build backend services and AI-powered applications for legal and
-              product teams. Based in New South Wales, Australia. Open to
-              relocation.
-            </p>
+            <p className="sidebar-kicker">{positionSummary.kicker}</p>
+            <h1 className="sidebar-name">{positionSummary.name}.</h1>
+            <p className="sidebar-title">{positionSummary.title}</p>
+            <p className="sidebar-tagline">{positionSummary.tagline}</p>
           </header>
 
           <nav className="sidebar-nav">
@@ -84,13 +81,17 @@ export default function Layout({ children }) {
 
           <div className="sidebar-footer">
             <a
-              href="/Resume2026.pdf"
+              href="/full-stack-ai-developer-feng-lin-2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="sidebar-resume"
             >
               View Résumé
             </a>
+            <div className="sidebar-utility-links">
+              <Link to="/career-toolkit">Career Toolkit</Link>
+              <Link to="/projects/customer-ops-portal">Project Blueprint</Link>
+            </div>
             <div className="sidebar-social">
               <a
                 href="https://github.com/waynelin"

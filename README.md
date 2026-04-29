@@ -53,9 +53,10 @@ npm run dev
 
 - **首页**：Hero 简介 + 入口
 - **关于**：个人简介与技能
-- **项目**：经历与项目卡片（可改链接）
+- **项目**：经历、作品项目蓝图与项目卡片
 - **简历**：PDF 查看/下载（需将 PDF 放到 `frontend/public/resume.pdf`）
 - **联系**：表单提交到后端 `/api/contact`，后端将留言写入 `backend/data/contact.json`
+- **Career Toolkit**：集中展示 LinkedIn 文案、两版简历定位、目标岗位、学习路线与 3 个月计划
 
 ## 部署
 
@@ -109,14 +110,16 @@ npm run dev
 │   ├── data/          # 联系表单写入的 contact.json（自动创建）
 │   ├── .env.example
 │   └── package.json
+├── career-assets/     # 求职素材：LinkedIn、简历、投递与学习路线
+├── portfolio-projects/# 两个高 ROI 作品项目的蓝图说明
 ├── 个人主页开发与部署指南.md   # 详细开发与选型说明
 └── README.md          # 本文件
 ```
 
 ## 简历 PDF
 
-- 将你的简历 PDF 放在 **`frontend/public/Resume2026.pdf`**，站点中的「View Résumé」与简历页会链接到该文件
-- 若使用 `Wayne-Lin-Resume.tex`，在 Overleaf 或本地用 pdfLaTeX 编译后，将输出重命名/复制为 `frontend/public/Resume2026.pdf`
+- 将你的简历 PDF 放在 **`frontend/public/full-stack-ai-developer-feng-lin-2026.pdf`**，站点中的「View Résumé」与简历页会链接到该文件
+- 若使用 `Wayne-Lin-Resume.tex`，在 Overleaf 或本地用 pdfLaTeX 编译后，将输出重命名/复制为 `frontend/public/full-stack-ai-developer-feng-lin-2026.pdf`
 
 ## 更多说明
 

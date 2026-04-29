@@ -46,10 +46,15 @@ export default function Contact() {
           <span className="section-num">04.</span> Contact
         </h2>
         <p className="contact-intro">
-          Open to opportunities. Reach out via the form below or{" "}
+          Open to backend, full-stack, and AI-product opportunities in
+          Australia. Reach out via the form below or{" "}
           <a href="mailto:waynelinEU@gmail.com">waynelinEU@gmail.com</a>. You
           can also{" "}
-          <a href="/Resume2026.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/full-stack-ai-developer-feng-lin-2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             view my full résumé (PDF)
           </a>
           .

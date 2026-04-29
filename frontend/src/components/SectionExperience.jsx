@@ -8,12 +8,12 @@ const experiences = [
   {
     company: "Law Firm",
     companyUrl: "https://www.jtn.com/CN/index.aspx",
-    role: "AI Technique Provider",
+    role: "AI Solutions Builder",
     period: "Sep 2023 — Dec 2025",
     location: "Jinan, China",
     points: [
-      "Built a law logic solution system with Coze to provide law service, resulting in lawyer case searching and case integration.",
-      "Provided Chinese legal services.",
+      "Built a law logic solution with Coze for case search, service workflows, and legal information support.",
+      "Worked at the intersection of workflow design, domain logic, and AI-assisted delivery in a legal-tech setting.",
     ],
     tags: ["Coze", "Legal Tech"],
   },
@@ -24,8 +24,8 @@ const experiences = [
     period: "Sep 2022 — June 2023",
     location: "Sydney, Australia",
     points: [
-      "Developed and maintained backend services with Maven and Hibernate, ensuring reliable deployment and consistency.",
-      "Delivered e-commerce backend using Spring Boot; implemented API layer and connected front-end systems for production use.",
+      "Developed and maintained backend services with Maven and Hibernate, supporting reliable deployment and consistency.",
+      "Delivered a Spring Boot e-commerce backend with API integration for production-facing frontend systems.",
     ],
     tags: ["Java", "Spring Boot", "Maven", "Hibernate"],
   },
@@ -36,8 +36,8 @@ const experiences = [
     period: "Feb 2022 — June 2022",
     location: "Brisbane, Australia",
     points: [
-      "Researched classification performance on large unlabeled, imbalanced datasets; led data cleaning and reprocessing in Python (TensorFlow, PyTorch).",
-      "Built CNN and MLP models for weakly supervised learning; image and NLP self-supervision for cancer diagnosis.",
+      "Researched classification performance on large unlabeled, imbalanced datasets and led data cleaning in Python.",
+      "Built CNN and MLP models for weakly supervised learning across medical image and NLP tasks.",
     ],
     tags: ["Python", "TensorFlow", "PyTorch"],
     links: {

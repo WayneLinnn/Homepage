@@ -123,6 +123,22 @@
   color: var(--accent-dark);
 }
 
+.sidebar-utility-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-utility-links a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.sidebar-utility-links a:hover {
+  color: var(--accent);
+}
+
 .sidebar-social {
   display: flex;
   gap: 1.25rem;
@@ -176,6 +192,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+  }
+
+  .sidebar-utility-links {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .sidebar-nav-link {

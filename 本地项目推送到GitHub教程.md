@@ -155,7 +155,7 @@ git push
 
 ### 2. 大文件与二进制文件
 
-- `frontend/public/Resume2026.pdf`、`frontend/public/COMP7860_conference_paper (1).pdf` 若在项目里，会被提交；Git 适合代码和小文件，若以后仓库体积变大，可考虑用 Git LFS 或把大文件放到网盘、只在页面上放链接。
+- `frontend/public/full-stack-ai-developer-feng-lin-2026.pdf`、`frontend/public/COMP7860_conference_paper (1).pdf` 若在项目里，会被提交；Git 适合代码和小文件，若以后仓库体积变大，可考虑用 Git LFS 或把大文件放到网盘、只在页面上放链接。
 - 根目录下若有重复的 PDF（和 public 里一样），可考虑只保留 public 里一份，避免仓库重复变大。
 
 ### 3. 提交信息写清楚

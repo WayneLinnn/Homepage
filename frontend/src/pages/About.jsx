@@ -9,34 +9,41 @@ export default function About() {
         </h2>
         <div className="about-content">
           <p>
-            I'm Wayne Lin, based in New South Wales, Australia. I focus on
-            backend systems, AI applications, and legal-tech. I've built a law
-            logic solution with Coze at a law firm, delivered e-commerce backend
-            with Java/Spring Boot at Wipro, and researched weakly supervised
-            learning and medical data at the University of Queensland, with a
-            publication on pre-training in medical data.
+            I am a PR-based engineer in New South Wales, Australia, targeting
+            backend and backend-leaning full-stack roles. My strongest delivery
+            experience is in Java and Spring Boot, API design, business
+            workflows, and production-focused implementation.
           </p>
           <p>
-            I'm open to relocation and looking for roles where I can combine
-            backend engineering with AI or legal-tech.
+            I also have academic and applied AI experience across weakly
+            supervised learning, legal-tech workflows, and model-enabled product
+            ideas. My current direction is to stay software-first while growing
+            practical AI product and deployment capability.
           </p>
           <h3 className="about-skills-title">Skills</h3>
           <ul className="about-skills">
             <li>
-              <strong>Backend:</strong> Node.js, Java, Spring Boot, Maven,
-              Hibernate
+              <strong>Backend:</strong> Java, Spring Boot, REST APIs, Maven,
+              Hibernate, SQL
             </li>
             <li>
-              <strong>ML/Data:</strong> Python, PyTorch, TensorFlow, Hadoop, GCP
+              <strong>Frontend:</strong> React, TypeScript, JavaScript, HTML,
+              CSS
             </li>
             <li>
-              <strong>Frontend:</strong> React, HTML, CSS, JavaScript
+              <strong>AI / Data:</strong> Python, PyTorch, TensorFlow, RAG
+              workflows, Hadoop, GCP
+            </li>
+            <li>
+              <strong>Cloud / Delivery:</strong> Docker, AWS-ready deployment
+              workflow, Git, product documentation
             </li>
             <li>
               <strong>Languages:</strong> English (fluent), Mandarin (native)
             </li>
             <li>
-              <strong>Other:</strong> Australia Driver's Licence
+              <strong>Other:</strong> PR in Australia, open to relocation,
+              Australia Driver's Licence
             </li>
           </ul>
         </div>
